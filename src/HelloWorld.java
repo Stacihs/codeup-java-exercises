@@ -5,14 +5,14 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        int myFavoriteNumber = 13;
-        System.out.println(myFavoriteNumber);
-
-        String myString = "This is my string";
-        System.out.println(myString);
-
-        double myNumber = 3.14;
-        System.out.println(myNumber);
+//        int myFavoriteNumber = 13;
+//        System.out.println(myFavoriteNumber);
+//
+//        String myString = "This is my string";
+//        System.out.println(myString);
+//
+//        double myNumber = 3.14;
+//        System.out.println(myNumber);
 
 //        int x = 5;
 //        System.out.println(x++);
@@ -24,7 +24,7 @@ public class HelloWorld {
 
 //        class = "street";
 
-//        String theNumberThree = "three";
+        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
 
@@ -48,9 +48,6 @@ public class HelloWorld {
 
 //          int z = 20000000000000;
 //        System.out.println(z);
-
-
-
     }
 
 }
