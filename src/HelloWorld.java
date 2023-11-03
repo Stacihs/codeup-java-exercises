@@ -3,12 +3,13 @@ import org.w3c.dom.ls.LSOutput;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+//        System.out.print("Hello World!");
+//        System.out.print("Hello World!");
 
 //        int myFavoriteNumber = 13;
 //        System.out.println(myFavoriteNumber);
 //
-//        String myString = "This is my string";
+//        String myString = 3.14159;
 //        System.out.println(myString);
 //
 //        double myNumber = 3.14;
@@ -24,7 +25,7 @@ public class HelloWorld {
 
 //        class = "street";
 
-        String theNumberThree = "three";
+//        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
 
