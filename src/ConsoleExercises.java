@@ -10,6 +10,7 @@ public class ConsoleExercises {
 
 
         Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter("\n");
 //
 //        System.out.println("Enter a number:");
 //        int userNum = scanner.nextInt();
@@ -27,15 +28,29 @@ public class ConsoleExercises {
 //        String userSentence = scanner.nextLine();
 //        System.out.println(userSentence);
 
+//        System.out.println("Enter the length of the classroom: ");
+//        int classLength = Integer.parseInt(scanner.nextLine());
+//        System.out.println("Enter the width of the classroom: ");
+//        int classWidth = Integer.parseInt(scanner.nextLine());
+//
+//        int classArea = classLength * classWidth;
+//        int classPerimeter = (classLength * 2) + (classWidth * 2);
+//
+//        System.out.printf("Area: %d Perimeter: %d", classArea, classPerimeter);
+
+
+//        BONUS
         System.out.println("Enter the length of the classroom: ");
-        int classLength = Integer.parseInt(scanner.nextLine());
+        float classLength = scanner.nextInt();
         System.out.println("Enter the width of the classroom: ");
-        int classWidth = Integer.parseInt(scanner.nextLine());
+        float classWidth = scanner.nextInt();
+        System.out.println("Enter the height of the classroom: ");
+        float classHeight = scanner.nextInt();
 
-        int classArea = classLength * classWidth;
-        int classPerimeter = (classLength * 2) + (classWidth * 2);
+        float classArea = classLength * classWidth;
+        float classPerimeter = (classLength * 2) + (classWidth * 2);
+        float classVolume = classHeight * classLength * classWidth;
 
-        System.out.printf("The class area is: %d and the class perimeter is: %d", classArea, classPerimeter);
-
+        System.out.printf("The class area is: %.2f, the class perimeter is: %.2f, and the class volume is: %.2f.", classArea, classPerimeter, classVolume);
     }
 }
