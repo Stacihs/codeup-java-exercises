@@ -8,9 +8,6 @@ public class Input {
         new Scanner(System.in);
     }
 
-//    public void setScanner(Scanner scanner) {
-//        this.scanner = scanner;
-//    }
     public void setScanner() {
         scanner = new Scanner(System.in);
     }
@@ -65,4 +62,5 @@ public class Input {
         double num = Double.parseDouble(scanner.nextLine());
         System.out.printf("Your number is %f", num);
     }
+
 }
