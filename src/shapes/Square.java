@@ -1,4 +1,4 @@
-package Shapes;
+package shapes;
 
 class Square extends Rectangle {
     public Square(int side) {
