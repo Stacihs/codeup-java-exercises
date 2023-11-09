@@ -1,4 +1,5 @@
 public class Person {
+    public int length;
     private String name;
 
     public String getName() {
@@ -18,6 +19,7 @@ public class Person {
     public Person(String name) {
         this.name = name;
     }
+
 
     public static void main(String[] args) {
 //        Person andrew = new Person();
