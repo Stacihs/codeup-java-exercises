@@ -13,9 +13,7 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("Write a short sentence.");
         String str = scanner.nextLine();
-        System.out.printf("%s%n", str);
         return str;
     }
 
