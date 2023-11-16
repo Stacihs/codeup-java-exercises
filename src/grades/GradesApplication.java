@@ -54,7 +54,6 @@ public class GradesApplication {
             if (answer.equals("no")) {
                 seeAnotherStudent = false;
                 System.out.println("Goodbye, and have a wonderful day!!!!!!");
-
             }
         }
     }

@@ -4,28 +4,27 @@ import java.util.Scanner;
 
 public class Input {
     private Scanner scanner;
-    public void getScanner() {
-        new Scanner(System.in);
-    }
 
-    public void setScanner() {
+    public Input() {
         scanner = new Scanner(System.in);
     }
 
+
     public String getString() {
-        String str = scanner.nextLine();
-        return str;
+        return scanner.nextLine();
     }
 
     public boolean yesNo() {
+//        String answer = getString();
         System.out.println("Do you live in Texas?");
-        String answer = scanner.nextLine();
-        return answer.equals("yes");
+        String answer = scanner.nextLine().toLowerCase();
+        return answer.equals("yes") || answer.equals("y");
     }
+
 
     public int getInt(int min, int max) {
         System.out.printf("Enter a number between %d and %d: ", min, max);
-        int userNum = Integer.parseInt(scanner.nextLine());
+        int userNum = scanner.nextInt();
         if (userNum > max) {
             return getInt(min, max);
         } else if (userNum < min) {
@@ -36,29 +35,29 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Enter a number");
-        int inputNum = Integer.parseInt(scanner.nextLine());
-        System.out.print("Your number is:");
-        return inputNum;
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public double getDouble(double min, double max) {
-        System.out.printf("Enter a decimal between %f and %f: ", min,  max);
+        System.out.printf("Enter a decimal between %f and %f: ", min, max);
         double userNum = Double.parseDouble(scanner.nextLine());
         if (userNum > max) {
             return getDouble(min, max);
         } else if (userNum < min) {
             return getDouble(min, max);
         } else {
-            System.out.print("Your number is:");
+            System.out.printf("Your number is: %.2f", userNum);
         }
         return userNum;
     }
 
-    public void getDouble(){
+    public void getDouble() {
         System.out.print("Enter a decimal number ");
         double num = Double.parseDouble(scanner.nextLine());
         System.out.printf("Your number is %f", num);
     }
 
+    public static void main(String[] args) {
+
+    }
 }

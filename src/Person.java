@@ -11,7 +11,7 @@ public class Person {
     }
 
     public void sayHello() {
-        System.out.printf("Hello, %s", name);
+        System.out.printf("Hello, %s", this.name);
 
     }
 

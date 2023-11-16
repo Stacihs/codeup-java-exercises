@@ -25,7 +25,4 @@ public class Movie {
         this.category = category;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
